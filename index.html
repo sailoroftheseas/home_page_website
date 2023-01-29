@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<style>
+
+    body {
+        background-color: rgb(243, 243, 243);
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    #title {
+        text-align: center;
+        font-size: 45px;
+    }
+    
+    #image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 100%;
+        border: 1px dashed black;
+    }
+
+
+
+    div.container {
+        text-align: center;
+        margin:10px
+    }
+
+    ul.myUL {
+        display: inline-block;
+        text-align: left;
+        margin: 20px;
+
+    }
+
+    footer {
+
+    padding: 5px;
+
+    }
+
+    .buttondiv {
+        text-align: center;
+    }
+
+    .btn {
+
+        border-radius: 50%;
+        border: none;
+        padding: 9px 16px;
+        margin: 10px;
+        font-size: 24px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        border: 1px solid black;
+    }
+
+</style>
+<body>
+
+    <div id="main">
+
+        <h1 id="title">Mark Luber</h1>
+
+        <hr>
+
+    <div id="img-div">
+
+        <img id="image" src="abstract-user-flat-4.png" alt="Profile Pic">
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+
+        <ul class="myUL">
+            <li style="font-weight: bold; color:limegreen;">Lab 1 - Build a Simple Website Using HTML, CSS, JS and VS Code</li>
+            <li>Assignment Lab 2 - Creating your Portfolio Web Page</li>
+            <li>Lab 3 - Number Tricks</li>
+            <li>Assignment Lab 4a - Number Tricks Enhanced</li>
+            <li>Lab 4b - Create a Javascript StopWatch App</li>
+            <li>Lab 5 - MadLibs</li>
+            <li>Lab 5b - Tax Calculator App</li>
+            <li>Assignment Lab 6 - Debugging</li>
+            <li>Lab 6b - Email Form Revisited - How to Use QueryStrings</li>
+            <li>Lab 7 - Test Score App Enhanced</li>
+            <li>Lab 7b - Test Score App Enhanced Improved Input Validation</li>
+            <li>Lab 8 - Super Hero Cycling Banners</li>
+            <li>Assignment Lab 9b - The Changing Caterpillar</li>
+            <li>Lab 9a - Complete Khan Academy jQuery Video Series and SpinOffs</li>
+            <li>Lab 10 - Monster Mash</li>
+            <li>Assignment Lab 11 - Account Creation Form using jQuery Validation</li>
+            <li>Assignment Lab 12 - Alien Sighting Form</li>
+            <li>Assignment Lab 13: Create a State-of-the-Art MERN Stack Movie Review App</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <p style="text-align: center;">Mark Luber &copy</p>
+        <p id="date" style="text-align: center;"></p>
+    </footer>
+
+    <hr>
+
+    <div class="buttondiv">    
+        <button type="button" class="btn" onclick="window.scroll(0,0)">&uarr;</button>
+    </div>
+
+    <script>
+        const d = new Date();
+        document.getElementById("date").innerHTML = d;
+    </script>
+
+    </div>
+    
+</body>
+</html>
